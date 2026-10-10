@@ -1,15 +1,18 @@
 <?php
-$fruits =  array("avocado", "blueberry", "cherry", "durian", "elderberry", "fig", "grape", "honeydew");
+$fruits = array("Avocado", "Blueberry", "Cherry");
+array_push($fruits, "Durian", "Elderberry", "Fig", "Grape", "Honeydew");
+
 var_dump($fruits);
 echo "<br>";
-echo "Nilai dengan nilai index tertinggi : " . $fruits[7];
+echo "Nilai dengan indeks tertinggi: " . $fruits[7];
 
-echo "<br>";
+echo "<br><br>";
 
-echo "Data " . $fruits[1]. " di hapus";
-echo "<br>";
+echo "Data " . $fruits[1] . " dihapus <br>";
 unset($fruits[1]);
+
+$fruits = array_values($fruits);
 var_dump($fruits);
 echo "<br>";
-echo "Nilai dengan nilai index tertinggi : " . $fruits[7];
+echo "Nilai dengan indeks tertinggi: " . $fruits[6];
 ?>
